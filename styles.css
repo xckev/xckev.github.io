@@ -4,17 +4,22 @@
     font-family: Calibri;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .section1{
     width: 100%;
 }
 
 .logo{
-    height: 12vh;
+    height: 11vh;
     width: auto;
+    padding-left: 5vw;
 }
 
 nav{
-    background: #58b9f5;
+    background: #3C3C3E;
     position: fixed;
     display: flex;
     width: 90%;
@@ -24,6 +29,7 @@ nav{
     align-items:center;
     justify-content:space-between;
     z-index: 10;
+    transition: top 0.3s;
 }
 
 nav ul li{
@@ -35,12 +41,12 @@ nav ul li{
 nav ul li a{
     font-size: 130%;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: bold;
 }
 
 nav ul li a:hover{
-    color: #2229f5;
+    color: #9999cc;
 }
 
 .photo{
@@ -50,17 +56,9 @@ nav ul li a:hover{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(img/maintemp.png);
+    background-image: url(img/maintemp.jpg);
     padding-top: 200px;
     padding-bottom: 300px;
-}
-
-.pic{
-    width: 100vh;
-    right: 0px;
-    top: 18vh;
-    height: auto;
-    position: absolute;
 }
 
 .main{
@@ -70,16 +68,16 @@ nav ul li a:hover{
 
 .main h1{
     font-size: 55px;
-    color: #000;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 span{
-    color: #2229f5;
+    color: #9999cc;
 }
 
 .main p{
-    color: #351b70;
+    color: #c9c9c9;
     line-height: 30px;
     font-size: 25px;
     font-weight: bold;
@@ -87,28 +85,111 @@ span{
 
 .typing {
     overflow: hidden;
-    border-right: .15em solid black; 
-    white-space: nowrap; 
-    letter-spacing: 1px; 
-    animation: 
-      typing 6s steps(40, end),
-      blink-caret .75s step-end infinite;
+    animation: typing 6s steps(50, end), blink 1s step-end infinite;
     animation-iteration-count: infinite;
+    white-space: nowrap;
+    font-size: 50%;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
   }
   
   @keyframes typing {
-    from { width: 0 }
-    to { width: 24% }
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
   }
   
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black; }
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: transparent;
+    }
   }
 
   .section2{
-    padding-top: 200px;
-    padding-bottom: 1000px;
+    padding-top: 150px;
+    padding-bottom: 200px;
     text-align: center;
-    background-color: #9eedf7;
+    background-color: #171719;
   }
+
+  .section2 h2{
+    font-size: 40px;
+    color: #9999cc;
+    margin-bottom: 20px;
+}
+
+.section2 p{
+    font-size: 25px;
+    color: #fff;
+    margin: 10vw;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.section3{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: #000000;
+    align-items: center;
+    text-align: center;
+  }
+
+.section3 h2{
+    font-size: 40px;
+    color: #9999cc;
+    margin-bottom: 20px;
+}
+
+.section3 p{
+    font-size: 25px;
+    color: #fff;
+    margin: 10vw;
+    margin-top: 0;
+    margin-bottom: 75px;
+}
+
+.section3 a{
+    font-weight: bold;
+    font-size: 26px;
+    background: #55ed6f;
+    color: #000;
+    padding: 15px;
+    width: 320px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section3 a:hover{
+    background: #fff;
+}
+
+.section4{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: #171719;
+    align-items: center;
+    text-align: center;
+}
+
+.section4 h2{
+    font-size: 40px;
+    color: #9999cc;
+    margin-bottom: 20px;
+}
+
+.section4 p{
+    font-size: 25px;
+    color: #fff;
+    margin: 10vw;
+    margin-top: 0;
+    margin-bottom: 15px;
+}

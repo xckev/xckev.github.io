@@ -7,20 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav id="navbar">
+        <img class="logo" src="img/kevinlogo.png">
+        <!--
+        <h1>Kevin Xiao</h1>
+        -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-20vh";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+
     <div id="home" class="section1">
-        <nav>
-            <img class="logo" src="img/kevinlogo.png">
-            <!--
-            <h1>Kevin Xiao</h1>
-            -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
         
         <div class="photo">
             <!--
@@ -35,7 +49,20 @@
 
     <div id="about" class="section2">
         <h2>About Me</h2>
-        <p>Hi, my name is Kevin. I am currently a senior at Bellevue High School in Bellevue, Washington.</p>
+        <p>Hi, my name is Kevin. I am currently a senior at Bellevue High School in Bellevue, Washington. I'm passionate about developing technology to benefit the communities that I am part of. In addition to building websites like this one, I am fluent in Python, Java, and C++.</p>
+        <p>My other interests include listening to music, playing basketball and violin, and volunteering!</p>
+    </div>
+
+    <div id="resume" class="section3">
+        <h2>Resume</h2>
+        <p>Here's a quick summary of my education, accomplishments, experience, and activities!</p>
+        
+        <a href="./assets/Kevin_Resume.pdf" target="_blank" rel="norefferer">Download Resume</a>
+    </div>
+
+    <div id="projects" class="section4">
+        <h2>Projects</h2>
+        <p>Here's a collection of my open source Github repositories.</p>
     </div>
 </body>
 </html>
