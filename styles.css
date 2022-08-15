@@ -114,7 +114,7 @@ span{
 
   .section2{
     padding-top: 150px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     text-align: center;
     background-color: #171719;
   }
@@ -134,18 +134,35 @@ span{
     text-align: left;
 }
 
+.links{
+    padding-top: 75px;
+}
+
+.links a{
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #9999cc;
+}
+
+.links a:hover{
+    font-size: 26px;
+    text-decoration:underline;
+    cursor: pointer;
+    color: #fff;
+}
+
 .section3{
     padding-top: 150px;
     padding-bottom: 200px;
-    background-color: #000;
-    align-items: center;
-    text-align: center;
+    background-color: #000;    
 }
 
 .section3 h2{
     font-size: 40px;
     color: #9999cc;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .section3 p{
@@ -153,7 +170,122 @@ span{
     color: #fff;
     margin: 10vw;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.section3 h3{
+    color:#9999cc;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.tutoring{
+    padding-left:12vw;
+    width:80vw;
+    display: flex;
+    align-items: left;
+    padding-bottom: 200px;
+}
+
+.tutoring ul li{
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 2vw;
+    margin-bottom: 5px;
+    color:#fff;
+    font-size: 20px;
+}
+
+.tutoring a{
+    color:#a3edff;
+}
+
+.tutoring img{
+    width:30vw;
+    padding-left: 8vw;
+}
+
+.dp{
+    padding-left:12vw;
+    width:80vw;
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.dp ul li{
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 2vw;
+    margin-bottom: 5px;
+    color:#fff;
+    font-size: 20px;
+}
+
+.dp a{
+    color:#a3edff;
+}
+
+.dp img{
+    width:30vw;
+    padding-right: 5vw;
+}
+
+.cipherbot{
+    padding-left:12vw;
+    width:80vw;
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.cipherbot ul li{
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 2vw;
+    margin-bottom: 5px;
+    color:#fff;
+    font-size: 20px;
+}
+
+.cipherbot a{
+    color:#a3edff;
+}
+
+.cipherbot img{
+    width:20vw;
+    padding-left: 5vw;
+}
+
+.lavablock{
+    padding-left:12vw;
+    width:80vw;
+    display: flex;
+    align-items: center;
+}
+
+.lavablock img{
+    width:30vw;
+    padding-right: 10vw;
+}
+
+.lavablock ul li{
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 2vw;
+    margin-bottom: 5px;
+    color:#fff;
+    font-size: 20px;
+}
+
+.lavablock a{
+    color:#a3edff;
 }
 
 .section4{
