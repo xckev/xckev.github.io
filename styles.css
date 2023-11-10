@@ -185,6 +185,60 @@ span{
     text-align: left;
 }
 
+.flyng{
+  padding-left:12vw;
+  width:80vw;
+  display: flex;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.flyng ul li{
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 2vw;
+  margin-bottom: 5px;
+  color:#fff;
+  font-size: 20px;
+}
+
+.flyng a{
+  color:#a3edff;
+}
+
+.flyng img{
+  width:28vw;
+  padding-left: 5vw;
+}
+
+.ClinicChatBot{
+  padding-left:12vw;
+  width:80vw;
+  display: flex;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.ClinicChatBot ul li{
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 2vw;
+  margin-bottom: 5px;
+  color:#fff;
+  font-size: 20px;
+}
+
+.ClinicChatBot a{
+  color:#a3edff;
+}
+
+.ClinicChatBot img{
+  width:18vw;
+  padding-left: 5vw;
+}
+
 .pathway{
     padding-left:12vw;
     width:80vw;
