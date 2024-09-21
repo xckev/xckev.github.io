@@ -185,6 +185,33 @@ span{
     text-align: left;
 }
 
+.artwork-insight{
+  padding-left:12vw;
+  width:80vw;
+  display: flex;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.artwork-insight ul li{
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 2vw;
+  margin-bottom: 5px;
+  color:#fff;
+  font-size: 20px;
+}
+
+.artwork-insight a{
+  color:#a3edff;
+}
+
+.artwork-insight img{
+  width:28vw;
+  padding-left: 5vw;
+}
+
 .flyng{
   padding-left:12vw;
   width:80vw;
