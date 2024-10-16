@@ -185,6 +185,33 @@ span{
     text-align: left;
 }
 
+.triage{
+  padding-left:12vw;
+  width:80vw;
+  display: flex;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.triage ul li{
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 2vw;
+  margin-bottom: 5px;
+  color:#fff;
+  font-size: 20px;
+}
+
+.triage a{
+  color:#a3edff;
+}
+
+.triage img{
+  width:28vw;
+  padding-left: 5vw;
+}
+
 .artwork-insight{
   padding-left:12vw;
   width:80vw;
@@ -289,7 +316,7 @@ span{
 }
 
 .pathway img{
-    width:30vw;
+    width:20vw;
     padding-left: 8vw;
 }
 
