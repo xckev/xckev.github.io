@@ -1,59 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Verdana;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.section1{
+.section1 {
     width: 100%;
 }
 
-.logo{
+.logo {
     height: 11vh;
     width: auto;
     padding-left: 5vw;
 }
 
-nav{
+nav {
     background: #3C3C3E;
     position: fixed;
     display: flex;
     width: 100vw;
     padding: 20px 0;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     z-index: 10;
     transition: top 0.3s;
 }
 
-nav ul{
-  margin-right: 5vw;
-  margin-left: 10vw;
+nav ul {
+    margin-right: 5vw;
+    margin-left: 10vw;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 20px;
 }
 
-nav ul li a{
+nav ul li a {
     font-size: 130%;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #9999cc;
 }
 
 
-.photo{
+.photo {
     position: relative;
     opacity: 0.9;
     background-attachment: fixed;
@@ -61,26 +61,25 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(img/maintemp.jpg);
-    padding-top: 30vh;
-    padding-bottom: 30vh;
+    padding: 30vh 0;
 }
 
-.main{
+.main {
     margin-left: 20%;
     margin-top: 15%;
 }
 
-.main h1{
+.main h1 {
     font-size: 55px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-span{
+span {
     color: #9999cc;
 }
 
-.main p{
+.main p {
     color: #c9c9c9;
     line-height: 30px;
     font-size: 25px;
@@ -95,362 +94,184 @@ span{
     font-size: 50%;
     border-right: 4px solid transparent;
     box-sizing: border-box;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 80%;
-    }
-  }
-  
-  @keyframes blink {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: transparent;
-    }
-  }
+}
 
-  .section2{
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+@keyframes typing {
+    from { width: 0%; }
+    to { width: 80%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: transparent; }
+}
+
+.section2, .section4 {
+    padding: 15vh 0;
     text-align: center;
     background-color: #171719;
-  }
+}
 
-  .section2 h2{
+.section2 h2, .section4 h2 {
     font-size: 40px;
     color: #9999cc;
     margin-bottom: 20px;
 }
 
-.section2 p{
+.section2 p, .section4 p {
     font-size: 25px;
     color: #fff;
-    margin: 10vw;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 10vw 15px;
     text-align: center;
 }
 
-.links{
+.links {
     padding-top: 75px;
+    text-align: center;
 }
 
-.links a{
+.links a {
     font-size: 25px;
     text-decoration: none;
     cursor: pointer;
     color: #9999cc;
 }
 
-.links a:hover{
+.links a:hover {
     font-size: 26px;
-    text-decoration:underline;
+    text-decoration: underline;
     cursor: pointer;
     color: #fff;
 }
 
-.section3{
-    padding-top: 20vh;
-    padding-bottom: 10vh;
-    background-color: #000;    
+.links span {
+    font-size: 25px;
 }
 
-.section3 h2{
+.section3 {
+    padding: 20vh 0 10vh;
+    background-color: #000;
+}
+
+.section3 h2 {
     font-size: 40px;
     color: #9999cc;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.section3 p{
+.section3 p {
     font-size: 25px;
     color: #fff;
-    margin: 10vw;
-    margin-top: 0;
-    margin-bottom: 150px;
+    margin: 0 10vw 150px;
     text-align: center;
 }
 
-.section3 h3{
-    color:#9999cc;
+.section3 h3 {
+    color: #9999cc;
     font-size: 30px;
     margin-bottom: 20px;
     text-align: left;
 }
 
-.triage{
-  padding-left:12vw;
-  width:80vw;
-  display: flex;
-  align-items: center;
-  padding-bottom: 200px;
-}
-
-.triage ul li{
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 0;
-  margin-left: 2vw;
-  margin-bottom: 5px;
-  color:#fff;
-  font-size: 20px;
-}
-
-.triage a{
-  color:#a3edff;
-}
-
-.triage img{
-  width:28vw;
-  padding-left: 5vw;
-}
-
-.artwork-insight{
-  padding-left:12vw;
-  width:80vw;
-  display: flex;
-  align-items: center;
-  padding-bottom: 200px;
-}
-
-.artwork-insight ul li{
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 0;
-  margin-left: 2vw;
-  margin-bottom: 5px;
-  color:#fff;
-  font-size: 20px;
-}
-
-.artwork-insight a{
-  color:#a3edff;
-}
-
-.artwork-insight img{
-  width:28vw;
-  padding-left: 5vw;
-}
-
-.flyng{
-  padding-left:12vw;
-  width:80vw;
-  display: flex;
-  align-items: center;
-  padding-bottom: 200px;
-}
-
-.flyng ul li{
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 0;
-  margin-left: 2vw;
-  margin-bottom: 5px;
-  color:#fff;
-  font-size: 20px;
-}
-
-.flyng a{
-  color:#a3edff;
-}
-
-.flyng img{
-  width:28vw;
-  padding-left: 5vw;
-}
-
-.ClinicChatBot{
-  padding-left:12vw;
-  width:80vw;
-  display: flex;
-  align-items: center;
-  padding-bottom: 200px;
-}
-
-.ClinicChatBot ul li{
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 0;
-  margin-left: 2vw;
-  margin-bottom: 5px;
-  color:#fff;
-  font-size: 20px;
-}
-
-.ClinicChatBot a{
-  color:#a3edff;
-}
-
-.ClinicChatBot img{
-  width:18vw;
-  padding-left: 5vw;
-}
-
-.pathway{
-    padding-left:12vw;
-    width:80vw;
-    display: flex;
-    align-items: left;
-    padding-bottom: 200px;
-}
-
-.pathway ul li{
-    list-style-type: disc;
-    text-align: left;
-    padding-left: 0;
-    margin-left: 2vw;
-    margin-bottom: 5px;
-    color:#fff;
-    font-size: 20px;
-}
-
-.pathway a{
-    color:#a3edff;
-}
-
-.pathway img{
-    width:20vw;
-    padding-left: 8vw;
-}
-
-.cipherbot{
-    padding-left:12vw;
-    width:80vw;
+/* Shared project container styles */
+.project-container {
+    padding-left: 12vw;
+    width: 80vw;
     display: flex;
     align-items: center;
     padding-bottom: 200px;
 }
 
-.cipherbot ul li{
+.project-container ul li {
     list-style-type: disc;
     text-align: left;
     padding-left: 0;
     margin-left: 2vw;
     margin-bottom: 5px;
-    color:#fff;
+    color: #fff;
     font-size: 20px;
 }
 
-.cipherbot a{
-    color:#a3edff;
+.project-container a {
+    color: #a3edff;
 }
 
-.cipherbot img{
-    width:20vw;
+.project-container img {
+    width: 28vw;
     padding-left: 5vw;
 }
 
-.lavablock{
-  padding-left:12vw;
-  width:80vw;
-  display: flex;
-  align-items: center;
-  padding-bottom: 200px;
+/* Specific adjustments for certain projects */
+.ClinicChatBot img {
+    width: 18vw;
 }
 
-.lavablock ul li{
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 0;
-  margin-left: 2vw;
-  margin-bottom: 5px;
-  color:#fff;
-  font-size: 20px;
+.pathway {
+    align-items: flex-start;
 }
 
-.lavablock a{
-  color:#a3edff;
+.pathway img {
+    width: 20vw;
+    padding-left: 8vw;
 }
 
-.lavablock img{
-  width:20vw;
-  padding-left: 5vw;
+.cipherbot img, .lavablock img {
+    width: 20vw;
 }
 
-.section4{
-  padding-top: 15vh;
-  padding-bottom: 15vh;
-  text-align: center;
-  background-color: #171719;
+.djinfo {
+    padding-left: 6vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
 }
 
-.section4 h2{
-  font-size: 40px;
-  color: #9999cc;
-  margin-bottom: 20px;
+.djinfo img {
+    width: 30vw;
+    padding-left: 2vw;
 }
 
-.section4 p{
-  font-size: 25px;
-  color: #fff;
-  margin: 10vw;
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.djinfo{
-  padding-left:6vw;
-  width:80vw;
-  display: flex;
-  align-items: center;
-}
-
-.djinfo img{
-  width:30vw;
-  padding-left: 2vw;
-}
-
-.section5{
-    padding-top: 10vh;
-    padding-bottom: 20vh;
+.section5 {
+    padding: 10vh 0 20vh;
     background-color: #000;
     padding-left: 15vw;
 }
 
-.section5 h2{
+.section5 h2 {
     font-size: 35px;
     color: #9999cc;
     margin-bottom: 10px;
 }
 
-.section5 h3{
+.section5 h3 {
     font-size: 25px;
     color: #fff;
     margin-bottom: 20px;
     margin-top: 30px;
 }
 
-.phone{
+.phone {
     font-size: 20px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.section5 a{
+.section5 a {
     font-size: 20px;
     color: #a3edff;
     margin-bottom: 20px;
-    
 }
 
-.section5 ul li{
+.section5 ul li {
     display: inline-block;
     list-style: none;
     margin-right: 150px;
 }
 
-.last{
+.last {
     color: #c9c9c9;
     padding-top: 40px;
     font-size: 12px;
     text-align: left;
-    padding-left: 0vw;
 }

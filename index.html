@@ -1,20 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
--->
     <title>Kevin Xiao</title>
     <link rel="icon" type="image/png" href="img/kevinlogo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav id="navbar">
-        <img class="logo" src="img/kevinlogo.png">
-        <!--
-        <h1>Kevin Xiao</h1>
-        -->
+        <img class="logo" src="img/kevinlogo.png" alt="Kevin Xiao Logo">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -25,25 +20,17 @@
     </nav>
 
     <script>
-        var prevScrollpos = window.pageYOffset;
+        let prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-20vh";
-        }
-        prevScrollpos = currentScrollPos;
+            const currentScrollPos = window.pageYOffset;
+            document.getElementById("navbar").style.top = prevScrollpos > currentScrollPos ? "0" : "-20vh";
+            prevScrollpos = currentScrollPos;
         }
     </script>
 
     <div id="home" class="section1">
-        
         <div class="photo">
-            <!--
-            <img class="pic" src="img/maintemp.png">
-            -->
-            <div class = "main">
+            <div class="main">
                 <h1>Hi, I'm <span>Kevin.</span></h1>
                 <p class="typing">Welcome to my personal website!</p>
             </div>
@@ -55,13 +42,13 @@
         <p>Hi, I'm Kevin. I am currently a Computer Science and Mathematics double major at the University of Washington in Seattle. I'm interested in both systems and theory, and I'm passionate about developing innovative technologies that are socially responsible.</p>
         <p>My personal interests include basketball, lifting, volunteering, music, and DJing.</p>
 
-        <p class="links" style="text-align: center;">
-            <a ref="mailto:xckevin2@gmail.com" href="mailto:xckevin2@gmail.com">Email</a>
-            <span style="font-size: 25">·</span>
-            <a href="./assets/resume2024.pdf" target="_blank" rel="noreferrer">Resume</a>
-            <span style="font-size: 25">·</span>
+        <p class="links">
+            <a href="mailto:xckevin2@gmail.com">Email</a>
+            <span>·</span>
+            <a href="./assets/RESUME2025.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <span>·</span>
             <a href="https://github.com/xckev" target="_blank" rel="noreferrer">Github</a>
-            <span style="font-size: 25">·</span>
+            <span>·</span>
             <a href="https://www.linkedin.com/in/xckev/" target="_blank" rel="noreferrer">Linkedin</a>
         </p>
     </div>
@@ -70,7 +57,23 @@
         <h2>Projects</h2>
         <p>Here's a collection of projects that I've been working on.</p>
 
-        <div class="triage">
+         <div class="Sussi project-container">
+          <div>
+              <h3><a href="https://github.com/leo3tian/llama4-proctor" target="_blank" rel="noreferrer">Sussi</a></h3>
+              <ul class="bullets">
+                  <li style="color: darkorange;">First-Prize Winning <a href="https://www.linkedin.com/posts/meta-for-developers_huge-congratulations-to-all-the-winners-of-activity-7342999203477934080-YJgy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2K8pwB7nEXaD3ohRaJcWo7KDToSXngBWo" target="_blank" rel="noreferrer">Meta Llama 4 Seattle Hackathon</a> Project</li>
+                  <li>A comprehensive classroom monitoring solution that uses AI to analyze student screen activity in real-time.</li>
+                  <li>Student client developed with SwiftUI that provides full-screen capture and active window information.</li>
+                  <li>Teacher client developed with Next.js that features both individual and classroom aggregate insights as well as context-enhanced interative features and automations.</li>
+                  <li>Centralized data storage via MongoDB Atlas for real-time synchronization and scalability.</li>
+                  <li>Usage of Llama-4-Scout-17B-16E-Instruct-FP8's long-context, structured output, tool-calling, and native multimodal capabilities.</li>
+                  <li>YouTube demo submission: <a href="https://www.youtube.com/watch?v=jB-9dRld60w" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=jB-9dRld60w</a></li>
+              </ul>
+          </div>
+          <img src="./img/sussi.png" alt="sussi">
+      </div>
+
+        <div class="triage project-container">
           <div>
               <h3><a href="https://triage-relief.vercel.app/" target="_blank" rel="noreferrer">Triage Disaster Relief</a></h3>
               <ul class="bullets">
@@ -86,7 +89,7 @@
           <img src="./img/triage.png" alt="triage">
       </div>
 
-        <div class="artwork-insight">
+        <div class="artwork-insight project-container">
           <div>
               <h3>Artwork Insight</h3>
               <ul class="bullets">
@@ -102,7 +105,7 @@
           <img src="./img/artwork_insight.png" alt="artwork-insight">
       </div>
 
-        <div class="flyng">
+        <div class="flyng project-container">
           <div>
               <h3>Flyng</h3>
               <ul class="bullets">
@@ -117,7 +120,7 @@
           <img src="./img/flyngwebsite.png" alt="flyng">
       </div>
         
-        <div class="ClinicChatBot">
+        <div class="ClinicChatBot project-container">
             <div>
                 <h3>ClinicChatBot</h3>
                 <ul class="bullets">
@@ -131,7 +134,7 @@
             <img src="./img/clinicpic.png" alt="ClinicChatBot">
         </div>
 
-        <div class="cipherbot">
+        <div class="cipherbot project-container">
             <div>
                 <h3>CipherBot</h3>
                 <ul class="bullets">
@@ -147,7 +150,7 @@
             <img src="./img/robot-lock-logo.png" alt="CipherBot">
         </div>
 
-        <div class="pathway">
+        <div class="pathway project-container">
             <div>
                 <h3>Pathway Foundation</h3>
                 <ul class="bullets">
@@ -168,8 +171,7 @@
             <img src="./img/pathway.webp" alt="PathwayFoundation">
         </div>
 
-        <div class="lavablock">
-            
+        <div class="lavablock project-container">
             <div>
                 <h3>Lavablock</h3>
                 <ul class="bullets">
@@ -200,18 +202,11 @@
     <div id="contact" class="section5">
         <h2>Contact Me</h2>
         <h3>Kevin Xiao</h3>
-        <!--
-        <p class="phone">(425) 525-9964</p>
-        -->
         <ul>
-            <!--
-            <li><a href="mailto:xckevin2@gmail.com">xckevin2@gmail.com</a></li>
-            -->
             <li><a href="https://www.github.com/xckev">github.com/xckev</a></li>
             <li><a href="https://www.linkedin.com/in/xckev">linkedin.com/in/xckev</a></li>
         </ul>
         <p class="last">This website was created from scratch with html and css</p>
     </div>
-
 </body>
 </html>
